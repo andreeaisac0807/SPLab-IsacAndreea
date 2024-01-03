@@ -1,3 +1,5 @@
+package ro.uvt.info.designpatternslab2023;
+
 public class Author {
     private String name;
 
@@ -5,8 +7,7 @@ public class Author {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
+    public String getName() {
         return name;
     }
 }
