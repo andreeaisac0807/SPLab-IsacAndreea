@@ -1,7 +1,9 @@
 package ro.uvt.info.designpatternslab2023;
 
 import ro.uvt.info.designpatternslab2023.Element;
+
 import java.util.concurrent.TimeUnit;
+
 public class Image implements Element{
     private String imageName;
 
@@ -37,4 +39,6 @@ public class Image implements Element{
     public Element get(int number) {
         return null;
     }
+
+
 }
