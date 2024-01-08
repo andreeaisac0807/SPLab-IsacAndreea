@@ -2,9 +2,11 @@ package ro.uvt.info.designpatternslab2023;
 
 import lombok.Getter;
 import ro.uvt.info.designpatternslab2023.Element;
+import ro.uvt.info.designpatternslab2023.Visitee;
+import ro.uvt.info.designpatternslab2023.Visitor;
 
 @Getter
-class Table implements Element {
+public class Table implements Element, Visitee {
     private String tableTitle;
 
     public Table(String tableTitle) {
@@ -29,5 +31,16 @@ class Table implements Element {
     @Override
     public Element get(int number) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+
+        visitor.visitTabel(this);
+    }
+
+    public String getName() {
+
+        return tableTitle;
     }
 }
