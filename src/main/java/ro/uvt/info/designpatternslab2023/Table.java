@@ -1,4 +1,5 @@
 package ro.uvt.info.designpatternslab2023;
+
 import lombok.Getter;
 import ro.uvt.info.designpatternslab2023.Element;
 
