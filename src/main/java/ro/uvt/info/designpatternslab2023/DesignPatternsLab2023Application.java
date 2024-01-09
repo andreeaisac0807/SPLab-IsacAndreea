@@ -8,6 +8,7 @@ import ro.uvt.info.designpatternslab2023.AlignRight;
 @SpringBootApplication
 public class DesignPatternsLab2023Application {
 
+    
     public static void main(String[] args) throws Exception {
         Book b = new Book("The book");
         Section cap1 = new Section("Chapter 1");
